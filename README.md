@@ -103,4 +103,3 @@ MCP tools: `mouse_move`, `mouse_click`, `mouse_scroll`, `type_text`, `press_key`
 ## License
 
 MIT
-```
