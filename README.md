@@ -84,3 +84,16 @@ MIT
 ```
 Set-Content -LiteralPath "C:\Users\SAQIB\Desktop\local-control-skill\README.md" -Value $readme
 Write-Host done
+
+## Use cases
+
+- Open an app or URL, wait, and click a button (e.g., Edge -> gmail.com -> compose -> send)
+- Automate repetitive data entry/forms on desktop/web apps
+- Send notifications or follow-up emails (Gmail compose via URL + Ctrl+Enter)
+- Open File Explorer to specific project folders quickly
+- Regression/UI smoke tests for desktop or web apps (click, type, screenshot)
+- Troubleshoot visually with screenshots (vision-capable agents)
+- Run a multi-step desktop workflow in one batch or daemon call
+- Quick window activation ("activate Slack", "activate VS Code")
+- Scroll, copy/paste analysis, and collect on-screen info
+- Schedule routines via task scheduler calling run.ps1
