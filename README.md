@@ -96,6 +96,3 @@ MCP tools: `mouse_move`, `mouse_click`, `mouse_scroll`, `type_text`, `press_key`
 
 MIT
 ```
-Set-Content -LiteralPath "C:\Users\SAQIB\Desktop\local-control-skill\README.md" -Value $readme
-Write-Host done
-
