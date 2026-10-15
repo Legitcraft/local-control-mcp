@@ -1,0 +1,22 @@
+[
+  {"action":"move","args":[100,100]},
+  {"action":"move","args":[200,200]},
+  {"action":"move","args":[300,300]},
+  {"action":"move","args":[400,400]},
+  {"action":"move","args":[500,500]},
+  {"action":"pos"},
+  {"action":"pos"},
+  {"action":"pos"},
+  {"action":"pos"},
+  {"action":"pos"},
+  {"action":"key","args":["tab"]},
+  {"action":"key","args":["tab"]},
+  {"action":"key","args":["tab"]},
+  {"action":"key","args":["tab"]},
+  {"action":"key","args":["tab"]},
+  {"action":"type","args":["hello"]},
+  {"action":"type","args":["world"]},
+  {"action":"scroll","args":[1]},
+  {"action":"scroll","args":[-1]},
+  {"action":"screenshot"}
+]
