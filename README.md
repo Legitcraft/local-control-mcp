@@ -78,13 +78,6 @@ MCP tools: `mouse_move`, `mouse_click`, `mouse_scroll`, `type_text`, `press_key`
 - Do not bypass UAC/secure desktop.
 - Use emergency stop (Ctrl+Alt+Shift+Esc) if needed.
 
-## License
-
-MIT
-```
-Set-Content -LiteralPath "C:\Users\SAQIB\Desktop\local-control-skill\README.md" -Value $readme
-Write-Host done
-
 ## Use cases
 
 - Open an app or URL, wait, and click a button (e.g., Edge -> gmail.com -> compose -> send)
@@ -97,3 +90,12 @@ Write-Host done
 - Quick window activation ("activate Slack", "activate VS Code")
 - Scroll, copy/paste analysis, and collect on-screen info
 - Schedule routines via task scheduler calling run.ps1
+
+
+## License
+
+MIT
+```
+Set-Content -LiteralPath "C:\Users\SAQIB\Desktop\local-control-skill\README.md" -Value $readme
+Write-Host done
+
