@@ -28,21 +28,29 @@ Works anywhere that can run local tools:
 
 ## Install
 
-1. Clone/download this folder to, for example:
-   - `~\.config\opencode\skills\local-control\`
-   - or any working directory
-2. For opencode skill: ensure folder is under skills path (`~\.agents\skills\local-control\` or `~\.config\opencode\skills\local-control\`).
-3. For MCP: add to `~\.config\opencode\opencode.jsonc`:
+Exact PowerShell one-liners (Windows):
+
+```powershell
+# 1. Clone/download into opencode skill folder
+$skill = "$env:USERPROFILE\.agents\skills\local-control"
+git clone https://github.com/Legitcraft/local-control-mcp.git $skill
+
+# 2. Or copy from an downloaded folder:
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.config\opencode\skills\local-control"
+Copy-Item -Recurse -Force "C:\path\to\local-control-skill\*" "$env:USERPROFILE\.config\opencode\skills\local-control\"
+```
+
+For opencode MCP, add this object under `mcp` in `%USERPROFILE%\.config\opencode\opencode.jsonc`:
 
 ```json
-"mcp": {
-  "local-control": {
-    "type": "local",
-    "command": ["python", "C:\\path\\to\\local-control-skill\\mcp_server.py"],
-    "enabled": true
-  }
+"local-control": {
+  "type": "local",
+  "command": ["python", "C:\\path\\to\\local-control\\mcp_server.py"],
+  "enabled": true
 }
 ```
+
+Then restart opencode.
 
 Then restart opencode.
 
